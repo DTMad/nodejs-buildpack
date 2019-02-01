@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/cloudfoundry/libbuildpack"
 	"net/url"
 	"os"
 	"os/exec"
@@ -168,6 +169,16 @@ func AssertNoInternetTraffic(fixtureName string) {
 		// Expect(built).To(BeTrue())
 		Expect(traffic).To(BeEmpty())
 	})
+}
+
+func GetLatestDepVersion(dep, constraint, bpDir string) string {
+	manifest, err := libbuildpack.NewManifest(bpDir, nil, time.Now())
+	Expect(err).ToNot(HaveOccurred())
+	deps := manifest.AllDependencyVersions(dep)
+	runtimeVersion, err := libbuildpack.FindMatchingVersion(constraint, deps)
+	Expect(err).ToNot(HaveOccurred())
+
+	return runtimeVersion
 }
 
 func RunCF(args ...string) error {

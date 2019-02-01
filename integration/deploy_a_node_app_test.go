@@ -79,7 +79,31 @@ var _ = Describe("V3 Wrapped CF NodeJS Buildpack", func() {
 		})
 	})
 
-	Context("multiple buildpacks", func() {
+	Context("multiple buildpacks with only v3 buildpacks", func() {
+		BeforeEach(func() {
+			if ok, err := cutlass.ApiGreaterThan("2.65.1"); err != nil || !ok {
+				Skip("API version does not have multi-buildpack support")
+			}
+
+			app = cutlass.New(filepath.Join(bpDir, "integration", "testdata", "v3_supplies_php"))
+			app.Disk = "2G"
+			app.Memory = "2G"
+		})
+
+		FIt("makes the supplied v3-shimmed dependency available at v3 launch and build", func() {
+			app.Buildpacks = []string{
+				"https://github.com/cloudfoundry/php-buildpack#v3",
+				"nodejs_buildpack",
+			}
+			Expect(app.Push()).To(Succeed())
+
+			Expect(app.Stdout.String()).To(ContainSubstring(`.*PHP.*\d+\.\d+\.\d+.*:.*Contributing.*`))
+			Expect(app.GetBody("/")).To(MatchRegexp(`PHP: \d+\.\d+\.\d+`))
+			Expect(app.GetBody("/text")).To(MatchRegexp(`Text: \d+\.\d+\.\d+`))
+		})
+	})
+
+	Context("multiple buildpacks with v2 and v3 buildpacks", func() {
 		BeforeEach(func() {
 			if ok, err := cutlass.ApiGreaterThan("2.65.1"); err != nil || !ok {
 				Skip("API version does not have multi-buildpack support")
