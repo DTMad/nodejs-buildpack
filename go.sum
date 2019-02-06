@@ -15,6 +15,8 @@ github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190205125149-66f7079c373f
 github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190205125149-66f7079c373f/go.mod h1:TojYXsxk1r+TaVOTUOWKyX2hAOzbvb+BsQGxUZ8Cb2s=
 github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190206054937-4a122ee2b19c h1:WfjcPTdWrXq3YKEx6om0F6TYZPZH7TwKY4efN3X6SrM=
 github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190206054937-4a122ee2b19c/go.mod h1:TojYXsxk1r+TaVOTUOWKyX2hAOzbvb+BsQGxUZ8Cb2s=
+github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190206060017-b5412e791a81 h1:9bJ7TKNiysVy9S77w5vf9a4x0yTX4y3rRyLdXh4TeUQ=
+github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190206060017-b5412e791a81/go.mod h1:TojYXsxk1r+TaVOTUOWKyX2hAOzbvb+BsQGxUZ8Cb2s=
 github.com/Masterminds/semver v1.4.2 h1:WBLTQ37jOCzSLtXNdoo8bNM8876KhNqOKvrlGITgsTc=
 github.com/Masterminds/semver v1.4.2/go.mod h1:MB6lktGJrhw8PrUyiEoblNEGEQ+RzHPF078ddwwvV3Y=
 github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239/go.mod h1:2FmKhYUyUczH0OGQWaF5ceTx0UBShxjsH6f8oGKYe2c=
