@@ -1,10 +1,10 @@
-# github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190206100105-639841cc604b
+# github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190212144842-88f012ea1e51
 github.com/Dynatrace/libbuildpack-dynatrace
 # github.com/Masterminds/semver v1.4.2
 github.com/Masterminds/semver
 # github.com/blang/semver v3.5.1+incompatible
 github.com/blang/semver
-# github.com/cloudfoundry/libbuildpack v0.0.0-20190123211659-27fcba64ad86
+# github.com/cloudfoundry/libbuildpack v0.0.0-20190204221830-290dcfc73c7d
 github.com/cloudfoundry/libbuildpack
 github.com/cloudfoundry/libbuildpack/checksum
 github.com/cloudfoundry/libbuildpack/bratshelper
@@ -54,15 +54,15 @@ github.com/onsi/gomega/matchers/support/goraph/bipartitegraph
 github.com/onsi/gomega/matchers/support/goraph/edge
 github.com/onsi/gomega/matchers/support/goraph/node
 github.com/onsi/gomega/matchers/support/goraph/util
-# github.com/tidwall/gjson v1.1.3
+# github.com/tidwall/gjson v1.1.5
 github.com/tidwall/gjson
 # github.com/tidwall/match v1.0.1
 github.com/tidwall/match
-# golang.org/x/net v0.0.0-20181220203305-927f97764cc3
+# golang.org/x/net v0.0.0-20190206173232-65e2d4e15006
 golang.org/x/net/html/charset
 golang.org/x/net/html
 golang.org/x/net/html/atom
-# golang.org/x/sys v0.0.0-20181221143128-b4a75ba826a6
+# golang.org/x/sys v0.0.0-20190209173611-3b5209105503
 golang.org/x/sys/unix
 # golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
 golang.org/x/text/encoding
@@ -84,7 +84,7 @@ golang.org/x/text/internal/language/compact
 golang.org/x/text/internal/tag
 # gopkg.in/fsnotify.v1 v1.4.7
 gopkg.in/fsnotify.v1
-# gopkg.in/jarcoal/httpmock.v1 v1.0.0-20181117152235-275e9df93516
+# gopkg.in/jarcoal/httpmock.v1 v1.0.0-20190204112747-618f46f3f0c8
 gopkg.in/jarcoal/httpmock.v1
 # gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
 gopkg.in/tomb.v1
