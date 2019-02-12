@@ -2,7 +2,7 @@ module github.com/cloudfoundry/nodejs-buildpack
 
 require (
 	cloud.google.com/go v0.34.0 // indirect
-	github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190212144842-88f012ea1e51
+	github.com/Dynatrace/libbuildpack-dynatrace v1.1.1-0.20190212150952-8399fb4d9ecf
 	github.com/Masterminds/semver v1.4.2
 	github.com/cloudfoundry/libbuildpack v0.0.0-20190204221830-290dcfc73c7d
 	github.com/golang/mock v1.2.0
